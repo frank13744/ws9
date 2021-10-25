@@ -1,7 +1,0 @@
-  1  sort -k 2 amazon_reviews_us_Books_v1_02.tsv | uniq -f 1 -w 10 -c | sort -k 1 -r > customerIDsort.txt
-  2  head 3 customerIDsort.txt
-  3  sort -k 4 amazon_reviews_us_Books_v1_02.tsv | uniq -f 3 -w 11 -c | sort -k 1 -r > productIDsort.txt
-  4  head 3 productIDsort.txt
-  5  sort -t $'\t' -k 9 amazon_reviews_us_Books_v1_02.tsv | tr -d $' ' |  uniq -f 8 -w 3 -c | sort -k 1 -r > helpfulnessSort.txt
-  6  head 3 helpfulnessSort.txt
-  7  history > cmds_ws3.log

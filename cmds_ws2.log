@@ -1,8 +1,0 @@
-    1  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz
-    2  grep verified amazon_reviews_us_Books_v1_02.tsv > verified.txt
-    3  grep -v verified amazon_reviews_us_Books_v1_02.tsv > unverified.txt
-    4  wc -lw verified.txt > counts.txt
-    5  wc -lw unverified.txt >> counts.txt
-    6  vi counts.txt
-    7  cat counts.txt
-    8  history > cmds_ws2.log
